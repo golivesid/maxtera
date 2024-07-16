@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/v1", routes);
 
 //telegram bot
-const BOT_TOKEN = process.env.BOT_TOKEN || "";
+const BOT_TOKEN = process.env.BOT_TOKEN || "7107662045:AAH0wV3U46yH5RbVF077Dul96delKT2RWhI";
 const bot = new Telegraf(BOT_TOKEN);
 
 bot.start(async (ctx) => {
